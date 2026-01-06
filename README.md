@@ -60,9 +60,9 @@ Se você deseja clonar este projeto para estudo:
 Se você gostou do que viu e quer um projeto com o selo de qualidade **THLL**, entre em contato:
 
 * **GitHub:** [@tiagohll](https://github.com/tiagohll)
-* **WhatsApp:** [Seu Link do WhatsApp]
-* **LinkedIn:** [Seu Link do LinkedIn]
-* **E-mail:** [Seu E-mail Profissional]
+* **Instagram:** [@tiagohll.dev](https://instagram.com/tiagohll.dev)
+* **LinkedIn:** Em construção
+* **E-mail:** [comercialthll@gmail.com](mailto::comercialthll@gmail.com)
 
 ---
 *Feito com ☕ e foco em conversão por **THLL**.*
