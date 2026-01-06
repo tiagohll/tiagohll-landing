@@ -57,20 +57,6 @@ export default function Services() {
                     <div className="border-b border-dashed my-9 border-white/10" />
                 </div>
                 <div className="relative flex flex-col md:flex-row gap-6 md:gap-12 w-full md:w-1/2 max-w-5xl">
-                    {/* Timeline (Linha e Pontos) */}
-                    <div className="relative flex flex-row items-center justify-around min-w-[30px] md:hidden">
-                        {/* Linha: Horizontal no mobile (w-full h-[2px]), Vertical no MD+ (w-[2px] h-full) */}
-                        <div className="absolute w-full h-[2px] top-1/2 -translate-y-1/2 md:translate-y-0 md:w-[2px] md:h-full md:left-1/2 md:-translate-x-1/2 bg-gradient-to-r md:bg-gradient-to-b from-[#7C5CFF] via-[#6A4DFF] to-transparent" />
-
-                        {/* Pontos de Brilho */}
-                        {[1, 2, 3].map((i) => (
-                            <div
-                                key={i}
-                                className="z-10 w-3 h-3 bg-[#A78BFF] rounded-full shadow-[0_0_15px_#A78BFF]"
-                            />
-                        ))}
-                    </div>
-
                     <div className="relative flex-col items-center hidden md:flex">
                         {/* A Linha em si */}
                         <div className="absolute h-full w-[2px] bg-gradient-to-b from-[#7C5CFF] via-[#6A4DFF] to-transparent" />
@@ -84,7 +70,7 @@ export default function Services() {
                     </div>
 
                     {/* Grid de Cards: 1 coluna no mobile, 3 colunas no Desktop se preferir horizontal, ou manter coluna */}
-                    <div className="flex md:flex-col gap-4 w-full h-fit">
+                    <div className="flex flex-col gap-4 w-full h-fit">
                         {services.map((service, index) => (
                             <Card
                                 key={index}
