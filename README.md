@@ -11,7 +11,7 @@ A ideia desta landing page é ser **minimalista, rápida e eficiente**. Ela foi 
 ### 🛠️ Tecnologias Utilizadas
 * **Frontend:** [ Next.js ]
 * **Estilização:** [ Tailwind CSS ]
-* * **Análises:** Integrado nativamente com o **THLL Control**.
+* **Análises:** Integrado nativamente com o **THLL Control**.
 * **Deploy:** [ Vercel ]
 
 ---
