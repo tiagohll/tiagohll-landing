@@ -1,71 +1,36 @@
-# 🚀 Meu Portfólio Pessoal & Landing Page
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Bem-vindo ao repositório da minha landing page oficial. Este projeto serve como meu cartão de visitas digital, onde apresento meus trabalhos, tecnologias que domino e os diferenciais que ofereço aos meus clientes.
+## Getting Started
 
----
+First, run the development server:
 
-## 💻 Sobre o Projeto
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-A ideia desta landing page é ser **minimalista, rápida e eficiente**. Ela foi construída para converter visitantes em clientes, mostrando de forma clara como eu transformo ideias em sistemas e sites de alta performance.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### 🛠️ Tecnologias Utilizadas
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
--   **Frontend:** [ Next.js ]
--   **Estilização:** [ Tailwind CSS ]
--   **Análises:** Integrado nativamente com o **THLL Control**.
--   **Deploy:** [ Vercel ]
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
----
+## Learn More
 
-## 🌟 Diferenciais do meu serviço
+To learn more about Next.js, take a look at the following resources:
 
-Ao desenvolver um projeto comigo, o cliente não recebe apenas um site, mas uma solução completa que inclui:
+-   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+-   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-1.  **Alta Performance:** Código otimizado para carregar em milissegundos.
-2.  **SEO Nativo:** Preparado para ser encontrado nos mecanismos de busca.
-3.  **THLL Control:** Acesso exclusivo ao meu painel de métricas simplificado, onde o cliente acompanha acessos e (em breve) edita textos sem complicação.
-4.  **Design Exclusivo:** Sem templates prontos; cada projeto é único.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
----
+## Deploy on Vercel
 
-## 📊 Integração com THLL Control
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Esta landing page já está integrada ao meu ecossistema de controle. Através do **THLL Control**, eu monitoro:
-
--   As seções mais lidas do meu portfólio.
--   O volume de tráfego orgânico vs. direto.
--   Conversões de cliques em botões de contato.
-
----
-
-## 📂 Como rodar o projeto localmente
-
-Se você deseja clonar este projeto para estudo:
-
-1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/tiagohll/tiagohll-landing.git](https://github.com/tiagohll/tiagohll-landing.git)
-    ```
-2.  **Instale as dependências:**
-    ```bash
-    npm install
-    ```
-3.  **Inicie o ambiente de desenvolvimento:**
-    ```bash
-    npm run dev
-    ```
-
----
-
-## 📨 Contato
-
-Se você gostou do que viu e quer um projeto com o selo de qualidade **THLL**, entre em contato:
-
--   **GitHub:** [@tiagohll](https://github.com/tiagohll)
--   **Instagram:** [@tiagohll.dev](https://instagram.com/tiagohll.dev)
--   **LinkedIn:** Em construção
--   **E-mail:** [comercialthll@gmail.com](mailto::comercialthll@gmail.com)
-
----
-
-_Feito com ☕ e foco em conversão por **THLL**._
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
