@@ -11,6 +11,7 @@ A ideia desta landing page é ser **minimalista, rápida e eficiente**. Ela foi 
 ### 🛠️ Tecnologias Utilizadas
 * **Frontend:** [ Next.js ]
 * **Estilização:** [ Tailwind CSS ]
+* * **Análises:** Integrado nativamente com o **THLL Control**.
 * **Deploy:** [ Vercel ]
 
 ---
@@ -41,13 +42,13 @@ Se você deseja clonar este projeto para estudo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [[[https://github.com/tiagohll/tiagohll-landing.git](https://github.com/tiagohll/tiagohll-landing.git)]
+    git clone [https://github.com/tiagohll/tiagohll-landing.git](https://github.com/tiagohll/tiagohll-landing.git)
     ```
 2.  **Instale as dependências:**
     ```bash
     npm install
     ```
-3.  **Inicie o servidor de desenvolvimento:**
+3.  **Inicie o ambiente de desenvolvimento:**
     ```bash
     npm run dev
     ```
@@ -58,6 +59,7 @@ Se você deseja clonar este projeto para estudo:
 
 Se você gostou do que viu e quer um projeto com o selo de qualidade **THLL**, entre em contato:
 
+* **GitHub:** [@tiagohll](https://github.com/tiagohll)
 * **WhatsApp:** [Seu Link do WhatsApp]
 * **LinkedIn:** [Seu Link do LinkedIn]
 * **E-mail:** [Seu E-mail Profissional]
