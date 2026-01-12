@@ -2,6 +2,7 @@
 
 import { ChevronRight } from "lucide-react";
 import Step from "../Step";
+import Link from "next/link";
 
 export default function HowItWorks() {
     const steps = [
@@ -63,7 +64,10 @@ export default function HowItWorks() {
 
                 {/* Chamada para Ação (CTA) */}
                 <div className="mt-8 ml-10 md:ml-20">
-                    <button className="group flex items-center gap-2 text-white font-medium transition-colors">
+                    <Link
+                        href="/#cta"
+                        className="group flex items-center gap-2 text-white font-medium transition-colors"
+                    >
                         Quer começar?{" "}
                         <span className="text-outline group-hover:text-primary font-bold">
                             Vamos conversar
@@ -72,7 +76,7 @@ export default function HowItWorks() {
                             size={18}
                             className="group-hover:translate-x-1 text-outline group-hover:text-primary transition-transform"
                         />
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>

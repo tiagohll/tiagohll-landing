@@ -50,8 +50,8 @@ export default function Projects() {
                         >
                             <div className="absolute -inset-1 bg-gradient-to-r bg-gradient-clean rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
                             <Image
-                                src="/projetos/hadar.png" // Certifique-se que o caminho está correto
-                                alt="Agência Hadar"
+                                src="/projetos/hadar.webp" // Certifique-se que o caminho está correto
+                                alt="Agência Hadar Project Screenshot"
                                 width={800}
                                 height={500}
                                 className="relative rounded-xl border border-white/10 w-full object-cover"

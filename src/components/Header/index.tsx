@@ -16,12 +16,12 @@ export default function Header() {
                         dir="ltr"
                     >
                         <li>
-                            <a
+                            <Link
                                 href="/"
                                 className="flex items-center gap-4"
                             >
-                                Home
-                            </a>
+                                tiagohll
+                            </Link>
                         </li>
                         <li>
                             <div
@@ -51,7 +51,7 @@ export default function Header() {
                                 href="/"
                                 className="flex items-center gap-4"
                             >
-                                Home
+                                tiagohll
                             </Link>
                         </li>
                         <li className="flex items-center gap-2">
@@ -70,9 +70,16 @@ export default function Header() {
                                 </Link>
                             </ul>
                             <ul className="flex items-center text-gray-200 transition-colors">
-                                <Link href="/#sobre">
+                                <Link href="/#servicos">
                                     <div className="no-underline data-[active]:underline  rounded-[10px] p-3 text-xs transition-all hover:bg-gray-800 hover:text-white flex items-center gap-2">
                                         Sobre
+                                    </div>
+                                </Link>
+                            </ul>
+                            <ul className="flex items-center text-gray-200  transition-colors">
+                                <Link href="/#cta">
+                                    <div className="no-underline data-[active]:underline  rounded-[10px] p-3 text-xs transition-all bg-gradient-to-r from-[#7C5CFF] to-[#6A4DFF] hover:bg-from-[#6A4DFF] hover:to-[#7C5CFF] hover:text-white flex items-center gap-2 duration-200">
+                                        Solicitar Orçamento
                                     </div>
                                 </Link>
                             </ul>

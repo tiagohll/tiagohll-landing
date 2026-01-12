@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
@@ -11,7 +10,7 @@ export default function Analytics({
     const pathname = usePathname();
 
     useEffect(() => {
-        // 1. Definições de Identidade Diária
+        // Lógica de debounce e token de visita
         const today = new Date().toISOString().slice(0, 10);
         let token = localStorage.getItem("_track_token");
         let tokenDate = localStorage.getItem("_track_date");
@@ -24,15 +23,18 @@ export default function Analytics({
             localStorage.setItem("_track_date", today);
         }
 
-        // 2. Filtro de Fôlego (30 segundos)
         const lastTrack =
             localStorage.getItem("_track_last");
         const now = Date.now();
+
+        // Evita disparos repetidos em menos de 30s
         if (lastTrack && now - Number(lastTrack) < 30000)
             return;
 
-        // 3. Envio para a sua API
-        // Substitua pela URL real do seu SaaS em produção
+        const urlParams = new URLSearchParams(
+            window.location.search
+        );
+        const utmSource = urlParams.get("utm_source");
         const ENDPOINT =
             process.env.NEXT_PUBLIC_ANALYTICS_URL ||
             "https://tiagohll-control.vercel.app/api/track";
@@ -43,8 +45,13 @@ export default function Analytics({
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 site_id: siteId,
-                path: pathname,
-                visitor_token: token,
+                path:
+                    window.location.pathname +
+                    window.location.search,
+                visitor_hash: token,
+                event_type: utmSource
+                    ? `qr_${utmSource}`
+                    : "page_view",
             }),
         })
             .then(() =>
@@ -56,7 +63,7 @@ export default function Analytics({
             .catch((err) =>
                 console.error("Analytics Error:", err)
             );
-    }, [pathname, siteId]); // Dispara toda vez que o pathname mudar
+    }, [pathname, siteId]);
 
-    return null; // Componente invisível
+    return null;
 }
