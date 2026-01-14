@@ -40,6 +40,8 @@ export default function Footer() {
                         <Link
                             href="mailto:comercialthll@gmail.com"
                             className="flex items-center gap-2 hover:text-purple-400 transition-colors"
+                            id="footer-email-link"
+                            data-track="footer-email-link"
                         >
                             <Mail size={18} />{" "}
                             comercialthll@gmail.com
@@ -48,6 +50,8 @@ export default function Footer() {
                             href="https://wa.me/5534996805599"
                             target="_blank"
                             className="flex items-center gap-2 hover:text-green-400 transition-colors"
+                            id="footer-whatsapp-link"
+                            data-track="footer-whatsapp-link"
                         >
                             <MessageCircle size={18} /> (34)
                             99680-5599
@@ -62,20 +66,24 @@ export default function Footer() {
                     </h3>
                     <ul className="space-y-2">
                         <li>
-                            <a
+                            <Link
                                 href="#projetos"
                                 className="hover:text-white transition-colors"
+                                id="footer-projetos-link"
+                                data-track="footer-projetos-link"
                             >
                                 Projetos
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                                 href="#cta"
                                 className="hover:text-white transition-colors"
+                                id="footer-cta-link"
+                                data-track="footer-cta-link"
                             >
                                 Contato
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import Analytics from "@/components/Analytics";
+import AnalyticsTracker from "@/components/Analytics/tracker";
 
 /* const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,6 +47,7 @@ export default function RootLayout({
                     process.env.NEXT_PUBLIC_SITE_ID
                 )}
             />
+            <AnalyticsTracker />
         </html>
     );
 }
