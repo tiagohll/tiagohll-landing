@@ -27,8 +27,10 @@ export default function Hero() {
                         animate={{ opacity: 1, x: 0 }}
                     >
                         <Link
-                            href="#contato"
+                            href="#cta"
                             className="inline-flex mt-6 leading-[16.41px] items-center gap-2 rounded-xl bg-gradient-to-r from-[#7C5CFF] to-[#6A4DFF] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#7C5CFF]/30 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:shadow-[#7C5CFF]/50 focus:outline-none focus:ring-2 focus:ring-[#7C5CFF]/60 max-w-fit"
+                            id="hero-first-button"
+                            data-track="hero-first-button"
                         >
                             Solicitar orçamento
                             <ArrowRight size={18} />

@@ -67,6 +67,8 @@ export default function HowItWorks() {
                     <Link
                         href="/#cta"
                         className="group flex items-center gap-2 text-white font-medium transition-colors"
+                        id="hero-steps-button"
+                        data-track="hero-steps-button"
                     >
                         Quer começar?{" "}
                         <span className="text-outline group-hover:text-primary font-bold">

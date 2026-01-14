@@ -53,6 +53,8 @@ export default function CTA() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="group flex items-center gap-2 bg-gradient-to-r from-[#7C5CFF] to-[#6A4DFF] px-8 py-4 rounded-xl font-semibold text-lg transition-all shadow-[0_0_20px_rgba(99,102,241,0.3)]"
+                        id="hero-cta-button"
+                        data-track="hero-cta-button"
                     >
                         Solicitar orçamento
                         <ChevronRight
