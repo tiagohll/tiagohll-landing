@@ -33,8 +33,8 @@ export default function Services() {
             id="servicos"
             className="relative py-20 max-lg:pt-10 border-b border-white/10"
         >
-            <div className="relative z-30 mx-auto w-full max-w-[78.5rem] px-5 flex md:flex-row flex-col items-start">
-                <div className="md:w-1/2 w-full mb-10 lg:mb-0">
+            <div className="relative z-30 mx-auto w-full max-w-[78.5rem] px-5 flex md:flex-row flex-col md:items-start items-center">
+                <div className="md:w-1/2 w-full mb-10 lg:mb-0 flex flex-col md:items-start items-center text-center md:text-start">
                     <div className="border border-white/10 bg-white/5 py-1 px-3 rounded-2xl w-fit text-sm flex items-center gap-2 mb-3">
                         <div className="w-3 h-3 bg-outline rounded-full shadow-[0_0_15px_#a38bff]" />
                         Serviços
@@ -70,7 +70,7 @@ export default function Services() {
                     </div>
 
                     {/* Grid de Cards: 1 coluna no mobile, 3 colunas no Desktop se preferir horizontal, ou manter coluna */}
-                    <div className="flex flex-col gap-4 w-full h-fit">
+                    <div className="flex flex-col gap-4 w-full h-fit items-center">
                         {services.map((service, index) => (
                             <Card
                                 key={index}

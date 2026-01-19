@@ -63,10 +63,10 @@ export default function HowItWorks() {
                 </div>
 
                 {/* Chamada para Ação (CTA) */}
-                <div className="mt-8 ml-10 md:ml-20">
+                <div className="mt-8 flex w-full justify-center md:justify-start">
                     <Link
                         href="/#cta"
-                        className="group flex items-center gap-2 text-white font-medium transition-colors"
+                        className="group flex items-center gap-2 text-white font-medium transition-colors "
                         id="hero-steps-button"
                         data-track="hero-steps-button"
                     >
