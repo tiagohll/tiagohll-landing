@@ -1,55 +1,43 @@
+"use client";
 import Link from "next/link";
+import HeaderMobile from "./mobile"; // Certifique-se de que o arquivo mobile.tsx está na mesma pasta
 
 export default function Header() {
     return (
-        <header className="relative z-40 w-full bg-gray-950 lg:sticky lg:top-0">
+        <header className="relative z-50 w-full bg-gray-950 lg:sticky lg:top-0">
             <nav
                 aria-label="Menu de navegação mobile"
-                data-orientation="horizontal"
-                dir="ltr"
                 className="overflow-x-clip"
             >
                 <div style={{ position: "relative" }}>
-                    <ul
-                        data-orientation="horizontal"
-                        className="flex items-center justify-between  border-outline/20 px-5 py-4 xl:hidden"
-                        dir="ltr"
-                    >
+                    <ul className="flex items-center justify-between border-b border-white/5 px-5 py-4 xl:hidden">
                         <li>
                             <Link
                                 href="/"
-                                className="flex items-center gap-4"
+                                className="flex items-center gap-4 font-bold text-white"
                             >
                                 tiagohll
                             </Link>
                         </li>
-                        <li>
-                            <div
-                                data-orientation="vertical"
-                                aria-orientation="vertical"
-                                role="separator"
-                                className="h-[31px] w-px bg-gray-800"
-                            ></div>
+                        <li className="flex items-center">
+                            {/* O componente HeaderMobile entra aqui para controlar o menu hambúrguer */}
+                            <HeaderMobile />
                         </li>
                     </ul>
                 </div>
             </nav>
+
+            {/* Menu Desktop */}
             <nav
                 aria-label="Menu de navegação desktop"
-                data-orientation="horizontal"
-                dir="ltr"
-                className="hidden border-b border-outline/20 xl:block"
+                className="hidden border-b border-white/5 xl:block"
             >
                 <div style={{ position: "relative" }}>
-                    <ul
-                        data-orientation="horizontal"
-                        className="mx-auto hidden max-w-[120rem] items-center justify-between p-4 text-sm xl:flex xl:px-10"
-                        dir="ltr"
-                    >
+                    <ul className="mx-auto hidden max-w-[120rem] items-center justify-between p-4 text-sm xl:flex xl:px-10">
                         <li>
                             <Link
                                 href="/"
-                                className="flex items-center gap-4"
+                                className="flex items-center gap-4 font-bold text-white"
                             >
                                 tiagohll
                             </Link>
@@ -57,28 +45,28 @@ export default function Header() {
                         <li className="flex items-center gap-2">
                             <ul className="flex items-center text-gray-200 transition-colors">
                                 <Link href="/">
-                                    <div className="no-underline data-[active]:underline  rounded-[10px] p-3 text-xs transition-all hover:bg-gray-800 hover:text-white flex items-center gap-2">
+                                    <div className="rounded-[10px] p-3 text-xs transition-all hover:bg-gray-800 hover:text-white">
                                         Início
                                     </div>
                                 </Link>
                             </ul>
                             <ul className="flex items-center text-gray-200 transition-colors">
                                 <Link href="/#projetos">
-                                    <div className="no-underline data-[active]:underline  rounded-[10px] p-3 text-xs transition-all hover:bg-gray-800 hover:text-white flex items-center gap-2">
+                                    <div className="rounded-[10px] p-3 text-xs transition-all hover:bg-gray-800 hover:text-white">
                                         Projetos
                                     </div>
                                 </Link>
                             </ul>
                             <ul className="flex items-center text-gray-200 transition-colors">
                                 <Link href="/#servicos">
-                                    <div className="no-underline data-[active]:underline  rounded-[10px] p-3 text-xs transition-all hover:bg-gray-800 hover:text-white flex items-center gap-2">
+                                    <div className="rounded-[10px] p-3 text-xs transition-all hover:bg-gray-800 hover:text-white">
                                         Sobre
                                     </div>
                                 </Link>
                             </ul>
-                            <ul className="flex items-center text-gray-200  transition-colors">
+                            <ul className="flex items-center text-gray-200 transition-colors">
                                 <Link href="/#cta">
-                                    <div className="no-underline data-[active]:underline  rounded-[10px] p-3 text-xs transition-all bg-gradient-to-r from-[#7C5CFF] to-[#6A4DFF] hover:bg-from-[#6A4DFF] hover:to-[#7C5CFF] hover:text-white flex items-center gap-2 duration-200">
+                                    <div className="rounded-[10px] p-3 text-xs font-semibold transition-all bg-gradient-to-r from-[#7C5CFF] to-[#6A4DFF] hover:opacity-90 text-white flex items-center gap-2 duration-200">
                                         Solicitar Orçamento
                                     </div>
                                 </Link>
