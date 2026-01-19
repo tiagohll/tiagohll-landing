@@ -31,7 +31,7 @@ export default function CTA() {
                     >
                         Vamos transformar sua ideia em{" "}
                         <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-300">
+                        <span className="text-transparent bg-clip-text b-gradient-clean">
                             um site que gera resultado
                         </span>
                     </motion.h1>
