@@ -67,7 +67,7 @@ export default function Footer() {
                     <ul className="space-y-2">
                         <li>
                             <Link
-                                href="#projetos"
+                                href="/#projetos"
                                 className="hover:text-white transition-colors"
                                 id="footer-projetos-link"
                                 data-track="footer-projetos-link"
@@ -77,7 +77,7 @@ export default function Footer() {
                         </li>
                         <li>
                             <Link
-                                href="#cta"
+                                href="/#cta"
                                 className="hover:text-white transition-colors"
                                 id="footer-cta-link"
                                 data-track="footer-cta-link"
